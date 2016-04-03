@@ -24,7 +24,7 @@ class RSJMBGField(CharField):
 
     default_error_messages = {
         'invalid': _('This field should contain exactly 13 digits.'),
-        'date': _('The first 7 digits of the EMSO must represent a valid past date.'),
+        'date': _('The first 7 digits of the JMBG must represent a valid past date.'),
         'checksum': _('The JMBG is not valid.'),
     }
     jmbg = re.compile('^(\d{2})(\d{2})(\d{3})(\d{2})(\d{3})(\d)$')
